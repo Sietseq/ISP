@@ -80,6 +80,10 @@ def setready():
     setattr(g, '_ready', True)
     return ""
 
+@app.route('/')
+def main():
+    return "hello world"
+
 
 
 if __name__ == '__main__':
