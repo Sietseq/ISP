@@ -1,0 +1,3646 @@
+{
+    "uid": "R:8251e5ae0df46e43dcff-S:8626479774978b957741-P:1-K:h-T:1720049964384",
+    "version": "1f4",
+    "session_context": {
+        "username": "(guest user)",
+        "authentication_method": "none",
+        "is_system": false,
+        "is_guest": true,
+        "is_user": false,
+        "is_archive_user": false,
+        "is_qualified": false,
+        "has_universal_privs": false,
+        "has_allowed_host_priv": false,
+        "has_scan_center_priv": false,
+        "has_any_priv": false,
+        "pps": {
+            "is_page_target_owner": false,
+            "full_text_search_override": false
+        }
+    },
+    "request": {
+        "client_request_parameters": {
+            "client": "page_production_service_endpoint",
+            "user_query": null,
+            "page_type": "collection_details",
+            "page_target": "twitterstream",
+            "hits_per_page": 100,
+            "page": 1,
+            "sort": [
+                "date:desc"
+            ],
+            "aggregations": [],
+            "uid": "R:8251e5ae0df46e43dcff-S:8626479774978b957741-P:1-K:h-T:1720049964384",
+            "client_url": "https://archive.org/details/twitterstream?sort=-date"
+        },
+        "backend_requests": {
+            "search": {
+                "root": "(self)",
+                "children": [
+                    "collection_extra_info",
+                    "collection_title_fetch__dcd49d51f4c84868fe0d78ca0aaaed1a"
+                ],
+                "request_type": "search",
+                "finalized_parameters": {
+                    "client": "page_production_service_endpoint",
+                    "user_query": "(redacted)",
+                    "page_type": "collection_details",
+                    "page_target": "twitterstream",
+                    "hits_per_page": 100,
+                    "page": 1,
+                    "sort": [
+                        "date:desc"
+                    ],
+                    "aggregations": [],
+                    "uid": "R:8251e5ae0df46e43dcff-S:8626479774978b957741-P:1-K:h-T:1720049964384",
+                    "client_url": "https://archive.org/details/twitterstream?sort=-date",
+                    "fields": [
+                        "_tile_"
+                    ],
+                    "aggregations_size": 10,
+                    "service_backend": "metadata",
+                    "scope": "standard",
+                    "feature_flags": {
+                        "complex_facets": true,
+                        "top_filter": true,
+                        "collection_titles": true,
+                        "redact_collections": true,
+                        "redact_collections_by_privs": true,
+                        "redact_empty_collections": true,
+                        "sort_by_date_favorited": true
+                    },
+                    "service": "service__metadata__load_balanced"
+                }
+            },
+            "collection_extra_info": {
+                "root": "search",
+                "parent": "search",
+                "request_type": "collection_extra_info",
+                "finalized_parameters": {
+                    "page_type": "collection_extra_info",
+                    "page_target": "twitterstream",
+                    "service_backend": "eic",
+                    "caching": null
+                }
+            },
+            "collection_title_fetch__dcd49d51f4c84868fe0d78ca0aaaed1a": {
+                "root": "search",
+                "parent": "search",
+                "request_type": "collection_title_fetch",
+                "finalized_parameters": {
+                    "page_type": "document_fetch",
+                    "user_query": "(redacted)",
+                    "aggregations": [],
+                    "caching": null,
+                    "fields": [
+                        "identifier",
+                        "title"
+                    ],
+                    "page": 1,
+                    "hits_per_page": 250,
+                    "sort": [
+                        "_doc"
+                    ],
+                    "service_backend": "metadata",
+                    "scope": "standard",
+                    "service": "service__metadata__load_balanced"
+                }
+            }
+        }
+    },
+    "caching": {
+        "search": {
+            "name": "PPS-1f4-RT:s~hit-T:cd-PT:9856b590-H:100-S:0f5423c4-B:mds-RS:sta~CS::P:0+CS:some+BR:1",
+            "acceptable_names": [
+                "PPS-1f4-RT:s~std-T:cd-PT:9856b590-H:100-S:0f5423c4-B:mds-RS:sta~CS::P:0+CS:some+BR:1"
+            ],
+            "configuration": {
+                "requested": {
+                    "ttl_s": 1200
+                },
+                "finalized": {
+                    "bypass": false,
+                    "recompute": false,
+                    "no_compute": false,
+                    "ttl_s": 1200,
+                    "max_age_s": 0,
+                    "miss_policy": "none"
+                }
+            },
+            "utilization": {
+                "went_to_cache": true,
+                "alternates_allowed": true,
+                "hit_alternate": false,
+                "hit_canonical": true,
+                "hit": true,
+                "miss": true,
+                "recomputed": false,
+                "stored": false,
+                "acceptable_names_tried": [
+                    "PPS-1f4-RT:s~std-T:cd-PT:9856b590-H:100-S:0f5423c4-B:mds-RS:sta~CS::P:0+CS:some+BR:1"
+                ],
+                "elapsed_s": 0.011683940887451172
+            },
+            "statsd_bucket": "search.pps.cache.metadata.collection_details"
+        },
+        "collection_extra_info": {
+            "name": "PPS-1f4-RT:cei-T:cei-PT:9856b590",
+            "acceptable_names": [],
+            "configuration": {
+                "requested": {
+                    "ttl_s": 1200
+                },
+                "finalized": {
+                    "bypass": false,
+                    "recompute": false,
+                    "no_compute": false,
+                    "ttl_s": 1200,
+                    "max_age_s": 0,
+                    "miss_policy": "none"
+                }
+            },
+            "utilization": {
+                "went_to_cache": true,
+                "alternates_allowed": true,
+                "hit_alternate": false,
+                "hit_canonical": true,
+                "hit": true,
+                "miss": false,
+                "recomputed": false,
+                "stored": false,
+                "elapsed_s": 0.00608515739440918
+            },
+            "statsd_bucket": "search.pps.cache.metadata.collection_details"
+        },
+        "collection_title_fetch__dcd49d51f4c84868fe0d78ca0aaaed1a": {
+            "name": "PPS-1f4-RT:ctf-T:df-Q:b58758d2-F:a8092e92-B:mds-RS:sta~CS::P:0+CS:some+BR:1",
+            "acceptable_names": [],
+            "configuration": {
+                "requested": {
+                    "ttl_s": 1200
+                },
+                "finalized": {
+                    "bypass": false,
+                    "recompute": false,
+                    "no_compute": false,
+                    "ttl_s": 1200,
+                    "max_age_s": 0,
+                    "miss_policy": "none"
+                }
+            },
+            "utilization": {
+                "went_to_cache": true,
+                "alternates_allowed": true,
+                "hit_alternate": false,
+                "hit_canonical": true,
+                "hit": true,
+                "miss": false,
+                "recomputed": false,
+                "stored": false,
+                "elapsed_s": 0.005257129669189453
+            },
+            "statsd_bucket": "search.pps.cache.metadata.collection_details"
+        },
+        "summary": {
+            "fetched": [
+                "PPS-1f4-RT:s~hit-T:cd-PT:9856b590-H:100-S:0f5423c4-B:mds-RS:sta~CS::P:0+CS:some+BR:1",
+                "PPS-1f4-RT:cei-T:cei-PT:9856b590",
+                "PPS-1f4-RT:ctf-T:df-Q:b58758d2-F:a8092e92-B:mds-RS:sta~CS::P:0+CS:some+BR:1"
+            ],
+            "computed": [],
+            "stored": [],
+            "missed": [],
+            "bypassed": []
+        }
+    },
+    "elapsed_secs": 0.2932929992675781,
+    "response": {
+        "header": {
+            "succeeded": true,
+            "query_time": 24,
+            "forensics": {
+                "client_characterization": {
+                    "characterized_by": "guest",
+                    "preferred_client_ip": null,
+                    "client_ip": "129.222.193.38:sra",
+                    "preferred_client_useragent": null,
+                    "client_useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+                    "preferred_client_id": null,
+                    "client_id": "129.222.193.38:sra:cip",
+                    "application_id": "pageproduction"
+                },
+                "routing": {
+                    "backend": "es-prod-metadatasearch-filtered",
+                    "backend_server": "es-prod-client-o-03",
+                    "routed_to_load_balanced": true,
+                    "index_addressed": "prod-i-006"
+                },
+                "backend_request_elapsed_secs": {
+                    "search": 0.011683940887451172,
+                    "collection_extra_info": 0.00608515739440918,
+                    "collection_title_fetch__dcd49d51f4c84868fe0d78ca0aaaed1a": 0.005257129669189453
+                }
+            },
+            "elapsed_secs_for_backend_requests": 0.023026227951049805
+        },
+        "body": {
+            "hits": {
+                "total": 130,
+                "returned": 100,
+                "hits": [
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2023-01",
+                            "title": "Archive Team Twitter Grabs 2023-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the Spritzer version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2023-01-01T00:00:00Z",
+                            "year": 2023,
+                            "mediatype": "data",
+                            "item_size": 84338861062,
+                            "files_count": 37,
+                            "downloads": 1861,
+                            "week": 67,
+                            "month": 247,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2023-09-04T01:11:42Z",
+                            "publicdate": "2023-09-04T01:11:42Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2022-12",
+                            "title": "Archive Team Twitter Grabs 2022-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the Spritzer version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2022-12-01T00:00:00Z",
+                            "year": 2022,
+                            "mediatype": "data",
+                            "item_size": 47522680897,
+                            "files_count": 8,
+                            "downloads": 858,
+                            "week": 14,
+                            "month": 86,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2023-09-04T01:19:07Z",
+                            "publicdate": "2023-09-04T01:19:07Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-06",
+                            "title": "Archive Team Twitter Stream 2021-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-06-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "num_favorites": 2,
+                            "item_size": 64577621035,
+                            "files_count": 37,
+                            "downloads": 3053,
+                            "week": 2,
+                            "month": 26,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-07-08T13:49:53Z",
+                            "publicdate": "2021-07-08T13:49:53Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-05",
+                            "title": "Archive Team Twitter Stream 2021-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-05-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "item_size": 73813768047,
+                            "files_count": 38,
+                            "downloads": 1494,
+                            "week": 2,
+                            "month": 17,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-07-04T05:47:42Z",
+                            "publicdate": "2021-07-04T05:47:42Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-04",
+                            "title": "Archive Team Twitter Stream 2021-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-04-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 29082031005,
+                            "files_count": 21,
+                            "downloads": 1059,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-07-04T05:45:28Z",
+                            "publicdate": "2021-07-04T05:45:28Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-03",
+                            "title": "Archive Team Twitter Stream 2021-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-03-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "item_size": 69320293390,
+                            "files_count": 38,
+                            "downloads": 1279,
+                            "week": 4,
+                            "month": 20,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-07-04T05:45:36Z",
+                            "publicdate": "2021-07-04T05:45:36Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-02",
+                            "title": "Archive Team Twitter Stream 2021-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-02-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 65334104166,
+                            "files_count": 35,
+                            "downloads": 1351,
+                            "week": 3,
+                            "month": 13,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-07-04T03:28:07Z",
+                            "publicdate": "2021-07-04T03:28:07Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2021-01",
+                            "title": "Archive Team Twitter Stream 2021-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2021-01-01T00:00:00Z",
+                            "year": 2021,
+                            "mediatype": "data",
+                            "num_favorites": 3,
+                            "num_reviews": 2,
+                            "item_size": 26344168910,
+                            "files_count": 21,
+                            "downloads": 2842,
+                            "week": 3,
+                            "month": 16,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 5,
+                            "addeddate": "2021-01-22T13:27:18Z",
+                            "reviewdate": "2022-03-24T18:12:06Z",
+                            "publicdate": "2021-01-22T13:27:18Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-12",
+                            "title": "Archive Team Twitter Stream 2020-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-12-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 63926404073,
+                            "files_count": 38,
+                            "downloads": 2377,
+                            "week": 7,
+                            "month": 45,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-22T07:55:39Z",
+                            "publicdate": "2021-01-22T07:55:39Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-11",
+                            "title": "Archive Team Twitter Stream 2020-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-11-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 59771370772,
+                            "files_count": 37,
+                            "downloads": 2043,
+                            "week": 6,
+                            "month": 18,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-22T07:14:51Z",
+                            "publicdate": "2021-01-22T07:14:51Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-10",
+                            "title": "Archive Team Twitter Stream 2020-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-10-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 78522131752,
+                            "files_count": 38,
+                            "downloads": 2124,
+                            "week": 4,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-22T04:48:09Z",
+                            "publicdate": "2021-01-22T04:48:09Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-09",
+                            "title": "Archive Team Twitter Stream 2020-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-09-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 76486171570,
+                            "files_count": 37,
+                            "downloads": 2213,
+                            "week": 5,
+                            "month": 17,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-22T04:04:18Z",
+                            "publicdate": "2021-01-22T04:04:18Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-08",
+                            "title": "Archive Team Twitter Stream 2020-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-08-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 80125166046,
+                            "files_count": 38,
+                            "downloads": 2011,
+                            "week": 4,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-22T03:19:14Z",
+                            "publicdate": "2021-01-22T03:19:14Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2020-07",
+                            "title": "archiveteam-twitter-stream-2020-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2020-07-01T00:00:00Z",
+                            "year": 2020,
+                            "mediatype": "data",
+                            "item_size": 67278840805,
+                            "files_count": 37,
+                            "downloads": 2253,
+                            "week": 9,
+                            "month": 29,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2021-01-21T03:05:31Z",
+                            "publicdate": "2021-01-21T03:05:31Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-08",
+                            "title": "archiveteam-twitter-stream-2019-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-08-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 119601598236,
+                            "files_count": 66,
+                            "downloads": 3969,
+                            "week": 3,
+                            "month": 25,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T05:01:55Z",
+                            "publicdate": "2019-10-26T05:01:55Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-07",
+                            "title": "archiveteam-twitter-stream-2019-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-07-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 63455599243,
+                            "files_count": 38,
+                            "downloads": 2423,
+                            "week": 3,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T23:45:00Z",
+                            "publicdate": "2019-10-26T23:45:00Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-06",
+                            "title": "archiveteam-twitter-stream-2019-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-06-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 57556565530,
+                            "files_count": 37,
+                            "downloads": 2342,
+                            "week": 4,
+                            "month": 16,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-27T03:39:07Z",
+                            "publicdate": "2019-10-27T03:39:07Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-05",
+                            "title": "archiveteam-twitter-stream-2019-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-05-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 61794104771,
+                            "files_count": 38,
+                            "downloads": 4591,
+                            "week": 9,
+                            "month": 31,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-27T05:50:24Z",
+                            "publicdate": "2019-10-27T05:50:24Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-04",
+                            "title": "archiveteam-twitter-stream-2019-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-04-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 57315962106,
+                            "files_count": 37,
+                            "downloads": 2340,
+                            "week": 3,
+                            "month": 11,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-27T05:14:43Z",
+                            "publicdate": "2019-10-27T05:14:43Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-03",
+                            "title": "archiveteam-twitter-stream-2019-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-03-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 49800726040,
+                            "files_count": 34,
+                            "downloads": 2444,
+                            "week": 3,
+                            "month": 15,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-27T01:16:03Z",
+                            "publicdate": "2019-10-27T01:16:03Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-02",
+                            "title": "archiveteam-twitter-stream-2019-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-02-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 53097249157,
+                            "files_count": 35,
+                            "downloads": 2632,
+                            "week": 6,
+                            "month": 27,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T22:40:00Z",
+                            "publicdate": "2019-10-26T22:40:00Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2019-01",
+                            "title": "archiveteam-twitter-stream-2019-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2019-01-01T00:00:00Z",
+                            "year": 2019,
+                            "mediatype": "data",
+                            "item_size": 42951743439,
+                            "files_count": 31,
+                            "downloads": 2370,
+                            "week": 6,
+                            "month": 32,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T03:33:18Z",
+                            "publicdate": "2019-10-26T03:33:18Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-12",
+                            "title": "archiveteam-twitter-stream-2018-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-12-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 94246640229,
+                            "files_count": 54,
+                            "downloads": 2851,
+                            "week": 7,
+                            "month": 280,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T23:05:05Z",
+                            "publicdate": "2019-10-26T23:05:05Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-11",
+                            "title": "archiveteam-twitter-stream-2018-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-11-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 113570415298,
+                            "files_count": 67,
+                            "downloads": 2536,
+                            "week": 8,
+                            "month": 280,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2019-10-26T23:09:30Z",
+                            "publicdate": "2019-10-26T23:09:30Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-10",
+                            "title": "archiveteam-twitter-stream-2018-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-10-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 101511615357,
+                            "files_count": 61,
+                            "downloads": 10983,
+                            "week": 12,
+                            "month": 20,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-24T04:35:49Z",
+                            "publicdate": "2018-11-24T04:35:49Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-09",
+                            "title": "archiveteam-twitter-stream-2018-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-09-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 54130604769,
+                            "files_count": 38,
+                            "downloads": 3661,
+                            "week": 9,
+                            "month": 24,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-23T19:33:51Z",
+                            "publicdate": "2018-11-23T19:33:51Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-08",
+                            "title": "archiveteam-twitter-stream-2018-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-08-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 57169013832,
+                            "files_count": 39,
+                            "downloads": 3160,
+                            "week": 8,
+                            "month": 22,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-23T18:59:25Z",
+                            "publicdate": "2018-11-23T18:59:25Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-07",
+                            "title": "archiveteam-twitter-stream-2018-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-07-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 43615518965,
+                            "files_count": 32,
+                            "downloads": 2709,
+                            "week": 2,
+                            "month": 10,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-23T18:32:32Z",
+                            "publicdate": "2018-11-23T18:32:32Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-06",
+                            "title": "archiveteam-twitter-stream-2018-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-06-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 29067146389,
+                            "files_count": 25,
+                            "downloads": 2261,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-23T18:13:17Z",
+                            "publicdate": "2018-11-23T18:13:17Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-05",
+                            "title": "archiveteam-twitter-stream-2018-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-05-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 10620465099,
+                            "files_count": 15,
+                            "downloads": 2152,
+                            "week": 3,
+                            "month": 16,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-11-23T18:04:46Z",
+                            "publicdate": "2018-11-23T18:04:46Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2018-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-04-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "num_favorites": 2,
+                            "item_size": 45256255121,
+                            "files_count": 10,
+                            "downloads": 5767,
+                            "week": 3,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-05-23T21:56:43Z",
+                            "publicdate": "2018-05-23T21:56:43Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2018-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-03-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 56803288990,
+                            "files_count": 8,
+                            "downloads": 3425,
+                            "week": 1,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-05-23T21:30:01Z",
+                            "publicdate": "2018-05-23T21:30:01Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2018-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-02-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 49064167291,
+                            "files_count": 8,
+                            "downloads": 2958,
+                            "week": 3,
+                            "month": 13,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-05-23T20:50:45Z",
+                            "publicdate": "2018-05-23T20:50:45Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2018-01",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2018-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2018-01-01T00:00:00Z",
+                            "year": 2018,
+                            "mediatype": "data",
+                            "item_size": 55815759171,
+                            "files_count": 8,
+                            "downloads": 3446,
+                            "week": 1,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-05-23T20:11:29Z",
+                            "publicdate": "2018-05-23T20:11:29Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-11",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-11-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 96630317005,
+                            "files_count": 70,
+                            "downloads": 7396,
+                            "week": 4,
+                            "month": 27,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 5,
+                            "addeddate": "2018-01-03T03:36:39Z",
+                            "reviewdate": "2018-03-19T08:34:13Z",
+                            "publicdate": "2018-01-03T03:36:39Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-10",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-10-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 55066346841,
+                            "files_count": 38,
+                            "downloads": 3192,
+                            "week": 2,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-01-02T21:43:02Z",
+                            "publicdate": "2018-01-02T21:43:02Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-09",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-09-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 52268287967,
+                            "files_count": 38,
+                            "downloads": 3308,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-01-02T20:53:36Z",
+                            "publicdate": "2018-01-02T20:53:36Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-08",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-08-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 57403280503,
+                            "files_count": 38,
+                            "downloads": 2813,
+                            "week": 8,
+                            "month": 15,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-01-02T19:25:03Z",
+                            "publicdate": "2018-01-02T19:25:03Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-07",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-07-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 56111490865,
+                            "files_count": 38,
+                            "downloads": 3669,
+                            "week": 5,
+                            "month": 12,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2018-01-02T18:34:14Z",
+                            "publicdate": "2018-01-02T18:34:14Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-06",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-06-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 48692571435,
+                            "files_count": 8,
+                            "downloads": 3208,
+                            "week": 1,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-07-22T00:50:48Z",
+                            "publicdate": "2017-07-22T00:50:48Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-05",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-05-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 55623087673,
+                            "files_count": 8,
+                            "downloads": 2504,
+                            "week": 1,
+                            "month": 8,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-07-22T00:24:53Z",
+                            "publicdate": "2017-07-22T00:24:53Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-04-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 45519497735,
+                            "files_count": 8,
+                            "downloads": 2320,
+                            "week": 1,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-07-21T23:43:31Z",
+                            "publicdate": "2017-07-21T23:43:31Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-03-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 52978216174,
+                            "files_count": 8,
+                            "downloads": 2440,
+                            "week": 2,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-07-21T23:14:23Z",
+                            "publicdate": "2017-07-21T23:14:23Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2017-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam"
+                            ],
+                            "date": "2017-02-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 42665473255,
+                            "files_count": 8,
+                            "downloads": 2395,
+                            "week": 2,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-07-21T22:40:11Z",
+                            "publicdate": "2017-07-21T22:40:11Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2017-01",
+                            "title": "Archive Team JSON Download of Twitter Stream 2017-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2017-01-01T00:00:00Z",
+                            "year": 2017,
+                            "mediatype": "data",
+                            "item_size": 54068177248,
+                            "files_count": 8,
+                            "downloads": 4134,
+                            "week": 3,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-02-28T00:42:43Z",
+                            "publicdate": "2017-02-28T00:42:43Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-12",
+                            "title": "Archive Team JSON Download of Twitter Stream 2016-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-12-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 50483586728,
+                            "files_count": 8,
+                            "downloads": 2319,
+                            "week": 4,
+                            "month": 16,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-02-28T00:05:44Z",
+                            "publicdate": "2017-02-28T00:05:44Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-11",
+                            "title": "Archive Team JSON Download of Twitter Stream 2016-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-11-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 51337524866,
+                            "files_count": 8,
+                            "downloads": 2279,
+                            "week": 3,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-02-27T23:21:41Z",
+                            "publicdate": "2017-02-27T23:21:41Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-10",
+                            "title": "Archive Team JSON Download of Twitter Stream 2016-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-10-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 43951541488,
+                            "files_count": 8,
+                            "downloads": 2040,
+                            "week": 1,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-02-27T22:43:07Z",
+                            "publicdate": "2017-02-27T22:43:07Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-09",
+                            "title": "Archive Team JSON Download of Twitter Stream 2016-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-09-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 48074195388,
+                            "files_count": 8,
+                            "downloads": 1929,
+                            "week": 3,
+                            "month": 10,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2017-02-27T22:12:24Z",
+                            "publicdate": "2017-02-27T22:12:24Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-08",
+                            "title": "Archive Team JSON Download of Twitter Stream 2016-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-08-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 46212811256,
+                            "files_count": 9,
+                            "downloads": 1971,
+                            "week": 4,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 5,
+                            "addeddate": "2017-02-27T21:39:19Z",
+                            "reviewdate": "2017-10-14T09:39:11Z",
+                            "publicdate": "2017-02-27T21:39:19Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-07",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-07-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 52312418487,
+                            "files_count": 8,
+                            "downloads": 3340,
+                            "week": 1,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-08-17T20:14:01Z",
+                            "publicdate": "2016-08-17T20:14:01Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-06",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-06-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 38457315489,
+                            "files_count": 9,
+                            "downloads": 2113,
+                            "week": 1,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 3,
+                            "addeddate": "2016-08-17T19:21:27Z",
+                            "reviewdate": "2016-08-30T02:00:06Z",
+                            "publicdate": "2016-08-17T19:21:27Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-05",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-05-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 49501832287,
+                            "files_count": 8,
+                            "downloads": 1957,
+                            "week": 2,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-08-17T18:42:30Z",
+                            "publicdate": "2016-08-17T18:42:30Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-04-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 47193049425,
+                            "files_count": 8,
+                            "downloads": 2090,
+                            "week": 1,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-08-17T17:57:18Z",
+                            "publicdate": "2016-08-17T17:57:18Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-03-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "num_reviews": 1,
+                            "item_size": 36205436743,
+                            "files_count": 9,
+                            "downloads": 3102,
+                            "week": 1,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 5,
+                            "addeddate": "2016-04-06T08:16:25Z",
+                            "reviewdate": "2016-04-23T16:28:23Z",
+                            "publicdate": "2016-04-06T08:16:25Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-02-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 35280750050,
+                            "files_count": 9,
+                            "downloads": 1918,
+                            "week": 3,
+                            "month": 14,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 3,
+                            "addeddate": "2016-04-06T07:54:51Z",
+                            "reviewdate": "2016-12-20T12:31:22Z",
+                            "publicdate": "2016-04-06T07:54:51Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2016-01",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2016-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2016-01-01T00:00:00Z",
+                            "year": 2016,
+                            "mediatype": "data",
+                            "item_size": 49559012831,
+                            "files_count": 8,
+                            "downloads": 2176,
+                            "week": 2,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-04-06T07:38:48Z",
+                            "publicdate": "2016-04-06T07:38:48Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-12",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-12-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 32504948791,
+                            "files_count": 8,
+                            "downloads": 1770,
+                            "week": 1,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-04-06T07:12:32Z",
+                            "publicdate": "2016-04-06T07:12:32Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-11",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-11-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 31922607450,
+                            "files_count": 8,
+                            "downloads": 1684,
+                            "week": 2,
+                            "month": 10,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-04-06T06:51:43Z",
+                            "publicdate": "2016-04-06T06:51:43Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-10",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-10-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 46099811692,
+                            "files_count": 8,
+                            "downloads": 1906,
+                            "week": 1,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-04-06T06:10:20Z",
+                            "publicdate": "2016-04-06T06:10:20Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-09",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-09-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 32620589671,
+                            "files_count": 8,
+                            "downloads": 1776,
+                            "week": 1,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2016-04-06T05:45:15Z",
+                            "publicdate": "2016-04-06T05:45:15Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-08",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-08-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 49427376898,
+                            "files_count": 8,
+                            "downloads": 3222,
+                            "week": 1,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-09-29T01:29:24Z",
+                            "publicdate": "2015-09-29T01:29:24Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-07",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-07-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 49361584578,
+                            "files_count": 8,
+                            "downloads": 2452,
+                            "week": 2,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-09-29T01:03:21Z",
+                            "publicdate": "2015-09-29T01:03:21Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-06",
+                            "title": "Archive Team JSON Download of Twitter Stream 2015-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-06-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 46421062384,
+                            "files_count": 8,
+                            "downloads": 2198,
+                            "week": 1,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-07-29T02:16:44Z",
+                            "publicdate": "2015-07-29T02:16:44Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-05",
+                            "title": "Archive Team JSON Download of Twitter Stream 2015-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-05-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 48467034384,
+                            "files_count": 8,
+                            "downloads": 2178,
+                            "week": 3,
+                            "month": 8,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-07-29T01:50:28Z",
+                            "publicdate": "2015-07-29T01:50:28Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-04-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 40935426254,
+                            "files_count": 8,
+                            "downloads": 2174,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-05-12T23:44:54Z",
+                            "publicdate": "2015-05-12T23:44:54Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2015-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2015-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2015-03-01T00:00:00Z",
+                            "year": 2015,
+                            "mediatype": "data",
+                            "item_size": 17823810133,
+                            "files_count": 8,
+                            "downloads": 2072,
+                            "week": 2,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-05-12T23:10:38Z",
+                            "publicdate": "2015-05-12T23:10:38Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-12",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-12-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 52417500854,
+                            "files_count": 8,
+                            "downloads": 1633,
+                            "week": 1,
+                            "month": 2,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-05-12T22:55:59Z",
+                            "publicdate": "2015-05-12T22:55:59Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-11",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-11-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 51025243334,
+                            "files_count": 8,
+                            "downloads": 1828,
+                            "week": 2,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-05-12T22:12:14Z",
+                            "publicdate": "2015-05-12T22:12:14Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-10",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-10-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 51076289972,
+                            "files_count": 8,
+                            "downloads": 1757,
+                            "week": 1,
+                            "month": 1,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2015-05-12T20:28:24Z",
+                            "publicdate": "2015-05-12T20:28:24Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-05",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-05-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 47979965593,
+                            "files_count": 8,
+                            "downloads": 1723,
+                            "week": 1,
+                            "month": 3,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-06-09T17:54:04Z",
+                            "publicdate": "2014-06-09T17:54:04Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-04-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 48432893193,
+                            "files_count": 8,
+                            "downloads": 2135,
+                            "week": 2,
+                            "month": 2,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-06-08T19:23:24Z",
+                            "publicdate": "2014-06-08T19:23:24Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-03-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 49572610612,
+                            "files_count": 8,
+                            "downloads": 1890,
+                            "week": 6,
+                            "month": 8,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-06-08T18:45:36Z",
+                            "publicdate": "2014-06-08T18:45:36Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-02-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "item_size": 36302306073,
+                            "files_count": 8,
+                            "downloads": 1703,
+                            "week": 2,
+                            "month": 2,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-06-08T18:00:05Z",
+                            "publicdate": "2014-06-08T18:00:05Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archivetam-twitter-stream-2014-01-mysqldump",
+                            "title": "ArchiveTeam MYSQL dump of Twitter Stream 2014-01",
+                            "description": "Due to a machine crash, JSON downloading of twitter as in the other items in this collection was lost for most of the month of January 2014. This collection is a mysqldump of some of the data.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-01-01T00:00:00Z",
+                            "year": 2014,
+                            "type": "software",
+                            "mediatype": "data",
+                            "item_size": 5589941597,
+                            "files_count": 8,
+                            "downloads": 1180,
+                            "week": 6,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-06-08T16:46:46Z",
+                            "publicdate": "2014-06-08T16:46:46Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2014-01",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2014-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2014-01-01T00:00:00Z",
+                            "year": 2014,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 288521,
+                            "files_count": 9,
+                            "downloads": 1331,
+                            "week": 1,
+                            "month": 3,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 0,
+                            "addeddate": "2014-06-08T17:24:20Z",
+                            "reviewdate": "2014-08-11T08:33:03Z",
+                            "publicdate": "2014-06-08T17:24:20Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-12",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-12-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 72324228723,
+                            "files_count": 9,
+                            "downloads": 1966,
+                            "week": 2,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2014-02-06T03:56:32Z",
+                            "publicdate": "2014-02-06T03:56:32Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-11",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-11-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 46835824323,
+                            "files_count": 8,
+                            "downloads": 1668,
+                            "week": 3,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-12-09T06:36:56Z",
+                            "publicdate": "2013-12-09T06:36:56Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-10",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-10-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 46817259099,
+                            "files_count": 8,
+                            "downloads": 1469,
+                            "week": 3,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-12-09T05:03:02Z",
+                            "publicdate": "2013-12-09T05:03:02Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-09",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-09-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 42342746903,
+                            "files_count": 8,
+                            "downloads": 1461,
+                            "week": 3,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-12-09T03:15:29Z",
+                            "publicdate": "2013-12-09T03:15:29Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-08",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-08-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "num_reviews": 2,
+                            "item_size": 50335157257,
+                            "files_count": 9,
+                            "downloads": 7057,
+                            "week": 2,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 5,
+                            "addeddate": "2013-10-03T00:38:57Z",
+                            "reviewdate": "2013-12-24T08:35:46Z",
+                            "publicdate": "2013-10-03T00:38:57Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-07",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-07-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 48825906102,
+                            "files_count": 8,
+                            "downloads": 1735,
+                            "week": 2,
+                            "month": 2,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-03T00:00:27Z",
+                            "publicdate": "2013-10-03T00:00:27Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-06",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-06-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 43261545503,
+                            "files_count": 8,
+                            "downloads": 1458,
+                            "week": 3,
+                            "month": 3,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-02T23:26:48Z",
+                            "publicdate": "2013-10-02T23:26:48Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-05",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-05-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 47471966861,
+                            "files_count": 8,
+                            "downloads": 1551,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-02T22:50:21Z",
+                            "publicdate": "2013-10-02T22:50:21Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-04-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "num_reviews": 1,
+                            "item_size": 46120864700,
+                            "files_count": 9,
+                            "downloads": 1892,
+                            "week": 3,
+                            "month": 3,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 0,
+                            "addeddate": "2013-10-02T22:14:14Z",
+                            "reviewdate": "2014-11-18T18:52:55Z",
+                            "publicdate": "2013-10-02T22:14:14Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-03-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 45776460522,
+                            "files_count": 8,
+                            "downloads": 1863,
+                            "week": 7,
+                            "month": 15,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-02T21:37:47Z",
+                            "publicdate": "2013-10-02T21:37:47Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-02-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 39699595723,
+                            "files_count": 8,
+                            "downloads": 1712,
+                            "week": 3,
+                            "month": 11,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-02T21:03:32Z",
+                            "publicdate": "2013-10-02T21:03:32Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2013-01",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream 2013-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2013-01-01T00:00:00Z",
+                            "year": 2013,
+                            "mediatype": "data",
+                            "item_size": 39648405702,
+                            "files_count": 8,
+                            "downloads": 1600,
+                            "week": 3,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2013-10-02T20:28:30Z",
+                            "publicdate": "2013-10-02T20:28:30Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-12",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-12",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-12-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "num_reviews": 4,
+                            "item_size": 36357162050,
+                            "files_count": 10,
+                            "downloads": 2567,
+                            "week": 4,
+                            "month": 8,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "avg_rating": 4,
+                            "addeddate": "2013-01-20T15:06:14Z",
+                            "reviewdate": "2013-10-24T08:25:30Z",
+                            "publicdate": "2013-01-20T15:06:14Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-11",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-11",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-11-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "item_size": 39981697318,
+                            "files_count": 9,
+                            "downloads": 1707,
+                            "week": 3,
+                            "month": 7,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-12-06T02:25:38Z",
+                            "publicdate": "2012-12-06T02:25:38Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-10",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-10",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-10-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "item_size": 39113136378,
+                            "files_count": 9,
+                            "downloads": 1612,
+                            "week": 3,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-12-06T02:09:09Z",
+                            "publicdate": "2012-12-06T02:09:09Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-09",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-09",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-09-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "item_size": 35315716629,
+                            "files_count": 9,
+                            "downloads": 1640,
+                            "week": 1,
+                            "month": 15,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-12-06T01:49:20Z",
+                            "publicdate": "2012-12-06T01:49:20Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-08",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-08",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-08-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "item_size": 36556790098,
+                            "files_count": 9,
+                            "downloads": 1619,
+                            "week": 4,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-12-06T01:27:09Z",
+                            "publicdate": "2012-12-06T01:27:09Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-07",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-07",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-07-01T00:00:00Z",
+                            "year": 2012,
+                            "language": [
+                                "eng"
+                            ],
+                            "mediatype": "data",
+                            "item_size": 36244755338,
+                            "files_count": 9,
+                            "downloads": 1471,
+                            "week": 3,
+                            "month": 4,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-12-06T01:07:05Z",
+                            "publicdate": "2012-12-06T01:07:05Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-06",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-06",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-06-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "item_size": 31380670641,
+                            "files_count": 9,
+                            "downloads": 1420,
+                            "week": 3,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:42:36Z",
+                            "publicdate": "2012-07-02T20:42:36Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-05",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-05",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-05-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "item_size": 29293830623,
+                            "files_count": 9,
+                            "downloads": 1430,
+                            "week": 1,
+                            "month": 5,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:34:53Z",
+                            "publicdate": "2012-07-02T20:34:53Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-04",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-04",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-04-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "num_favorites": 1,
+                            "item_size": 26867133603,
+                            "files_count": 9,
+                            "downloads": 1388,
+                            "week": 4,
+                            "month": 6,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:29:09Z",
+                            "publicdate": "2012-07-02T20:29:09Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-03",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-03",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-03-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "item_size": 26646491262,
+                            "files_count": 9,
+                            "downloads": 1664,
+                            "week": 1,
+                            "month": 10,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:24:00Z",
+                            "publicdate": "2012-07-02T20:24:00Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-02",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-02",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-02-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "item_size": 22869336621,
+                            "files_count": 9,
+                            "downloads": 1574,
+                            "week": 4,
+                            "month": 9,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:18:22Z",
+                            "publicdate": "2012-07-02T20:18:22Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    },
+                    {
+                        "index": "prod-i-006",
+                        "service_backend": "metadata",
+                        "hit_type": "item",
+                        "fields": {
+                            "identifier": "archiveteam-twitter-stream-2012-01",
+                            "title": "ArchiveTeam JSON Download of Twitter Stream: 2012-01",
+                            "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. This is the \"Spritzer\" version, the most light and shallow of Twitter grabs. Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.",
+                            "collection": [
+                                "twitterstream",
+                                "archiveteam",
+                                "web"
+                            ],
+                            "date": "2012-01-01T00:00:00Z",
+                            "year": 2012,
+                            "mediatype": "data",
+                            "item_size": 23596666800,
+                            "files_count": 9,
+                            "downloads": 2232,
+                            "week": 4,
+                            "month": 8,
+                            "indexflag": [
+                                "index",
+                                "nonoindex"
+                            ],
+                            "addeddate": "2012-07-02T20:12:13Z",
+                            "publicdate": "2012-07-02T20:12:13Z"
+                        },
+                        "highlight": null,
+                        "_score": null
+                    }
+                ]
+            },
+            "collection_extra_info": {
+                "item_size": 77010,
+                "files_count": 9,
+                "month": 2258,
+                "week": 428,
+                "downloads": 303215,
+                "num_favorites": 30,
+                "title_message": null,
+                "primary_collection": "archiveteam",
+                "thumbnail_url": "https://ia801606.us.archive.org/22/items/twitterstream/icon.gif",
+                "has_items_with_searchable_text": false,
+                "item_count": 130,
+                "collection_size": 7466281713634,
+                "collection_files_count": 2874,
+                "forum_identifier": "twitterstream",
+                "forum_count": 0,
+                "review_count": 13,
+                "uploader_details": {
+                    "screen_name": "Jason Scott",
+                    "useritem": "@jason_scott",
+                    "is_archivist": true
+                },
+                "contributor_details": [
+                    {
+                        "screen_name": "Sketch the Cow",
+                        "useritem": "@sketch_the_cow",
+                        "is_archivist": true
+                    },
+                    {
+                        "screen_name": "Software Library",
+                        "useritem": "@software_library",
+                        "is_archivist": true
+                    }
+                ],
+                "public_metadata": {
+                    "identifier": "twitterstream",
+                    "collection": [
+                        "archiveteam",
+                        "web"
+                    ],
+                    "description": "A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory. <b>This is the \"Spritzer\" version, the most light and shallow of Twitter grabs.</b> Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.\r\n<br><br>\r\nfrom <a href=\"https://en.wikipedia.org/wiki/Twitter\">Wikipedia</a>:\r\n<a href=\"https://twitter.com/\">Twitter</a> is an online social networking service and microblogging service that enables its users to send and read text-based messages of up to 140 characters, known as \"tweets\".\r\n<br>",
+                    "hidden": "true",
+                    "mediatype": "collection",
+                    "title": "Archive Team: The Twitter Stream Grab",
+                    "publicdate": "2012-12-06 01:03:03",
+                    "addeddate": "2012-12-06 01:03:03",
+                    "backup_location": "ia905602_23",
+                    "show_search_by_year": "true",
+                    "summary": "<div><b>THIS COLLECTION IS NO LONGER UPDATED AND SHOULD BE CONSIDERED A STATIC DATASET.</b></div><div><br></div>A simple collection of JSON grabbed from the general twitter stream, for the purposes of research, history, testing and memory.&nbsp;<b>This is the \"Spritzer\" version, the most light and shallow of Twitter grabs.</b>&nbsp;Unfortunately, we do not currently have access to the Sprinkler or Garden Hose versions of the stream.<br><br>from&nbsp;<a href=\"https://en.wikipedia.org/wiki/Twitter\">Wikipedia</a>:&nbsp;<a href=\"https://twitter.com/\">Twitter</a>&nbsp;is an online social networking service and microblogging service that enables its users to send and read text-based messages of up to 140 characters, known as \"tweets\"."
+                }
+            },
+            "collection_titles": {
+                "web": "Web Crawls",
+                "twitterstream": "Archive Team: The Twitter Stream Grab",
+                "archiveteam": "Archive Team"
+            }
+        },
+        "hit_schema": {
+            "item": {
+                "identifier": {
+                    "multivalue": false,
+                    "mapping": "string"
+                },
+                "noindex": {
+                    "multivalue": false,
+                    "mapping": "boolean",
+                    "optional": true
+                },
+                "title": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "description": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "dressing": {
+                        "truncate": 1000
+                    },
+                    "optional": true
+                },
+                "subject": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "dressing": {
+                        "truncate": 1000
+                    },
+                    "optional": true
+                },
+                "creator": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "collection": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "comment": "may be a superset of metadata collection field"
+                },
+                "date": {
+                    "multivalue": false,
+                    "mapping": "date",
+                    "optional": true
+                },
+                "year": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "computed from date",
+                    "optional": true
+                },
+                "genre": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "volume": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "type": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "language": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "optional": true
+                },
+                "mediatype": {
+                    "multivalue": false,
+                    "mapping": "string"
+                },
+                "licenseurl": {
+                    "multivalue": false,
+                    "mapping": "string__url",
+                    "optional": true
+                },
+                "num_favorites": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "optional": true,
+                    "comment": "computed during document construction"
+                },
+                "num_reviews": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "optional": true,
+                    "comment": "computed during document construction"
+                },
+                "item_size": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "bytes; computed during document construction"
+                },
+                "files_count": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "computed during document construction"
+                },
+                "item_count": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "computed during document construction",
+                    "optional": true
+                },
+                "collection_files_count": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "computed during document construction, for collection items only",
+                    "optional": true
+                },
+                "collection_size": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "bytes; computed during document construction, for collection items only",
+                    "optional": true
+                },
+                "downloads": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "total views over item lifetime, updated by audit consultation with Views API",
+                    "optional": true
+                },
+                "week": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "views over a seven-day period, updated by audit consultation with Views API",
+                    "optional": true
+                },
+                "month": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "comment": "views over a month, updated by audit consultation with Views API",
+                    "optional": true
+                },
+                "indexflag": {
+                    "multivalue": true,
+                    "mapping": "string",
+                    "comment": "item characterization including noindex status"
+                },
+                "lending___available_to_borrow": {
+                    "multivalue": false,
+                    "mapping": "boolean",
+                    "comment": "may be stale",
+                    "optional": true
+                },
+                "lending___available_to_browse": {
+                    "multivalue": false,
+                    "mapping": "boolean",
+                    "comment": "may be stale",
+                    "optional": true
+                },
+                "lending___available_to_waitlist": {
+                    "multivalue": false,
+                    "mapping": "boolean",
+                    "comment": "may be stale",
+                    "optional": true
+                },
+                "lending___status": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "comment": "may be stale",
+                    "optional": true
+                },
+                "avg_rating": {
+                    "multivalue": false,
+                    "mapping": "integer",
+                    "optional": true
+                },
+                "addeddate": {
+                    "multivalue": false,
+                    "mapping": "date",
+                    "optional": true
+                },
+                "issue": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "comment": "format varies",
+                    "optional": true
+                },
+                "source": {
+                    "multivalue": false,
+                    "mapping": "string",
+                    "comment": "format varies",
+                    "optional": true
+                },
+                "reviewdate": {
+                    "multivalue": false,
+                    "mapping": "date",
+                    "optional": true
+                },
+                "publicdate": {
+                    "multivalue": false,
+                    "mapping": "date",
+                    "optional": true
+                },
+                "date_favorited": {
+                    "multivalue": false,
+                    "mapping": "date",
+                    "comment": "not metadata; only present in favorites lists, sourced from Lists API",
+                    "optional": true
+                },
+                "reviews_data": {
+                    "multivalue": true,
+                    "dressing": {
+                        "truncate": false
+                    },
+                    "mapping": "string",
+                    "comment": "untruncated JSON encoded data used for Account reviews",
+                    "optional": true
+                }
+            }
+        }
+    }
+}
