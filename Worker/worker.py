@@ -21,26 +21,27 @@ def show_progress(block_num, block_size, total_size):
         pbar = None
 
 def main():
-    os.mkdir("download/")
+    if not os.path.exists("download/"):
+        os.mkdir("download/")
     with open('files.txt') as read_file:
         for line in read_file:
             base_name = line.split('/')[-1].split('.')[0]
-            check_file = requests.get('http://127.0.0.1:5000/checkfile?file=' + base_name)
+            check_file = requests.get('http://52.14.130.151/checkfile?file=' + base_name)
             if int(check_file.text) == 1:
                 print(base_name)
                 print("Downloading")
                 urllib.request.urlretrieve(line, "download/archive" + line[len(line)-4:] , show_progress)
                 
                 print("Uploading")
-                requests.get('http://127.0.0.1:5000/addqueue?file=' + base_name)
+                requests.get('http://52.14.130.151/addqueue?file=' + base_name)
                 ready = False
                 while(not ready):
-                    my_list = list(requests.get('http://127.0.0.1:5000/checkqueue'))
+                    my_list = list(requests.get('http://52.14.130.151/checkqueue'))
                     if (ast.literal_eval(my_list[0].decode())[1] == base_name):
                         print("yes!")
                         ready = True
-                        os.popen("scp an-sdebacker@siku.ace-net.ca:~/twitter_stream_2018_12_01.tar.1 ~")
-                        requests.get('http://127.0.0.1:5000/setready')
+                        os.popen("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
+                        requests.get('http://52.14.130.151/setready')
                     time.sleep(0.5)
             
 
