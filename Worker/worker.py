@@ -26,22 +26,19 @@ def main():
     with open('files.txt') as read_file:
         for line in read_file:
             base_name = line.split('/')[-1].split('.')[0]
-            check_file = requests.get('http://52.14.130.151/checkfile?file=' + base_name)
-            if int(check_file.text) == 1:
-                print(base_name)
-                print("Downloading")
-                urllib.request.urlretrieve(line, "download/archive" + line[len(line)-4:] , show_progress)
+            print("Downloading")
+            urllib.request.urlretrieve(line, "download/archive" + line[len(line)-4:] , show_progress)
                 
-                print("Uploading")
-                requests.get('http://52.14.130.151/addqueue?file=' + base_name)
-                ready = False
-                while(not ready):
-                    my_list = list(requests.get('http://52.14.130.151/checkqueue'))
-                    if (ast.literal_eval(my_list[0].decode())[1] == base_name):
-                        print("yes!")
-                        ready = True
-                        os.popen("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
-                        requests.get('http://52.14.130.151/setready')
+            print("Uploading")
+            requests.get('http://52.14.130.151/addqueue?file=' + base_name)
+            ready = False
+            while(not ready):
+                my_list = list(requests.get('http://52.14.130.151/checkqueue'))
+                if (ast.literal_eval(my_list[0].decode())[1] == base_name):
+                    print("yes!")
+                    ready = True
+                    os.popen("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
+                    requests.get('http://52.14.130.151/setready')
                     time.sleep(0.5)
             
 
