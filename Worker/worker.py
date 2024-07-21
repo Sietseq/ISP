@@ -37,7 +37,7 @@ def main():
                 if (ast.literal_eval(my_list[0].decode())[1] == base_name):
                     print("yes!")
                     ready = True
-                    os.popen("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
+                    os.popen("sshpass -p '#######' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
                     requests.get('http://52.14.130.151/setready')
                     time.sleep(0.5)
             
