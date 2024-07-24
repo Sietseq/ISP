@@ -40,7 +40,7 @@ def main():
                 if (my_list[1] == base_name):
                     print(base_name)
                     ready = True
-                    text = os.system("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive.zip" + ' an-sdebacker@siku.ace-net.ca:~/ISP/Siku/upload/file.zip ')
+                    text = os.system("sshpass -p 'pwd' scp ./download/archive.zip" + ' usr@siku.ace-net.ca:~/ISP/Siku/upload/file.zip ')
                     requests.get('http://52.14.130.151/setready')
                 time.sleep(0.5)
             os.remove('download/archive.zip')
