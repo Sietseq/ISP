@@ -35,7 +35,7 @@ def main():
             requests.get('http://52.14.130.151/addqueue?file=' + base_name)
             ready = False
             while(not ready):
-                my_list = requests.get('http://52.14.130.151/checkqueue')
+                my_list = requests.get('http://ip/checkqueue')
                 my_list = ast.literal_eval(my_list.text)
                 if (my_list[1] == base_name):
                     print(base_name)
