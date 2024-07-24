@@ -11,7 +11,7 @@ class Config:
     SCHEDULER_API_ENABLED = True
 
 app.config.from_object(Config())
-
+app.config['ready'] = "notready"
 scheduler = APScheduler()
 scheduler.init_app(app)
 scheduler.start()
@@ -31,14 +31,14 @@ def checkfile():
 @app.route('/addqueue')
 def addqueue():
     file = request.args.get('file', default = "", type = str)
-    
+
     my_list = []
     with open('queue.txt', newline='') as f:
         reader = csv.reader(f)
         my_list = list(reader)
-    
-    my_list[0].append(file)
 
+    my_list[0].append(file)
+    
     with open('queue.txt', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(my_list[0])
@@ -51,7 +51,7 @@ def removequeue():
     with open('queue.txt', newline='') as f:
         reader = csv.reader(f)
         my_list = list(reader)
-    
+
     my_list[0].pop(1)
 
     with open('queue.txt', 'w', newline='') as f:
@@ -70,14 +70,14 @@ def checkqueue():
 
 @app.route('/getready')
 def readready():
-    if_ready = getattr(g, '_ready', None)
-    if (if_ready):
-        setattr(g, '_ready', False)
-    return str(if_ready)
+    if_ready = app.config['ready']
+    if (if_ready == 'ready'):
+        app.config['ready'] = 'notready'
+    return if_ready
 
 @app.route('/setready')
 def setready():
-    setattr(g, '_ready', True)
+    app.config['ready'] = 'ready'
     return ""
 
 @app.route('/')
