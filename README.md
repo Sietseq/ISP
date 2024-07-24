@@ -13,4 +13,4 @@ $ mkdir download
 $ touch files.txt  
 $ sudo apt install sshpass
 ```
-You will also have to change the ip adress in the code and your Siku username. Be sure to login at least to generate a fingerprint for the scp process.
+You will also have to go into ```worker.py``` and edit the proxy ip used and the username used for Siku.. Be sure to login at least to generate a fingerprint for the scp process.
