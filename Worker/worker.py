@@ -5,6 +5,8 @@ import requests
 import time
 import ast
 
+import subprocess
+
 
 pbar = None
 def show_progress(block_num, block_size, total_size):
@@ -21,26 +23,28 @@ def show_progress(block_num, block_size, total_size):
         pbar = None
 
 def main():
-    if not os.path.exists("download/"):
-        os.mkdir("download/")
+    if not os.path.exists('download/'):
+        os.mkdir('download/')
     with open('files.txt') as read_file:
         for line in read_file:
             base_name = line.split('/')[-1].split('.')[0]
-            print("Downloading")
-            urllib.request.urlretrieve(line, "download/archive" + line[len(line)-4:] , show_progress)
-                
-            print("Uploading")
+            print('Downloading: ' + line)
+            urllib.request.urlretrieve(line, 'download/archive.zip' , show_progress)
+
+            print('Uploading')
             requests.get('http://52.14.130.151/addqueue?file=' + base_name)
             ready = False
             while(not ready):
-                my_list = list(requests.get('http://52.14.130.151/checkqueue'))
-                if (ast.literal_eval(my_list[0].decode())[1] == base_name):
-                    print("yes!")
+                my_list = requests.get('http://52.14.130.151/checkqueue')
+                my_list = ast.literal_eval(my_list.text)
+                if (my_list[1] == base_name):
+                    print(base_name)
                     ready = True
-                    os.popen("sshpass -p '#######' scp ./download/archive" + line[len(line)-4:] + " an-sdebacker@siku.ace-net.ca:upload/file.tar ")
+                    text = os.system("sshpass -p 'EvyeLAd7avFuv' scp ./download/archive.zip" + ' an-sdebacker@siku.ace-net.ca:~/ISP/Siku/upload/file.zip ')
                     requests.get('http://52.14.130.151/setready')
-                    time.sleep(0.5)
-            
+                time.sleep(0.5)
+            os.remove('download/archive.zip')
+
 
 if __name__ == '__main__':
     main()
