@@ -4,7 +4,7 @@ This project downloads data from [Internet Archive](https://archive.org/details/
 
 ## Worker 
 This portion downloads the files to then be processed by the super computer. This can be ran on multiple cloud instances to get around the download limit imposed by the Internet Archive. To run this:
-'''
+```
 $ sudo apt install python3-venv 
 $ python3 -m venv .venv 
 $ source .venv/bin/activate 
@@ -12,5 +12,5 @@ $ pip install progressbar requests &&
 $ mkdir download
 $ touch files.txt  
 $ sudo apt install sshpass
-''' 
+```
 You will also have to change the ip adress in the code and your Siku username. Be sure to login at least to generate a fingerprint for the scp process.
