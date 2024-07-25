@@ -1,5 +1,5 @@
 # Twitter Internet Archive Holidays Analysis
-This project downloads data from [Internet Archive](https://archive.org/details/twitterstream). Multiple "worker" servers download these files since the Internet Archive sets a low download speed. Then a Proxy server acts like a man in the middle between the Worker servers and the supercomputer Siku. The proxy manages when worker servers should upload their file to the supercomputer and when the supercomputer has finished submitting a job. \
+This project downloads data from [Internet Archive](https://archive.org/details/twitterstream). Multiple "worker" servers download these files since the Internet Archive sets a low download speed. Then a Proxy server acts like a man in the middle between the Worker servers and the supercomputer Siku. The proxy manages when worker servers should upload their file to the supercomputer and when the supercomputer has finished submitting a job. This project used collections from August 2020 to December 2020 and created a timeline of how often certain holidays were mentioned. \
 ![diagram](diagram.png "Diagram")
 
 ## Worker 
@@ -8,9 +8,47 @@ This portion downloads the files to then be processed by the super computer. Thi
 $ sudo apt install python3-venv 
 $ python3 -m venv .venv 
 $ source .venv/bin/activate 
-$ pip install progressbar requests && 
+$ pip install progressbar requests
+$ sudo apt install sshpass
+$ git clone https://github.com/Sietseq/Twitter-Internet-Archive-Holidays-Analysis.git
+$ cd Twitter-Internet-Archive-Holidays-Analysis/Worker
 $ mkdir download
 $ touch files.txt  
-$ sudo apt install sshpass
 ```
-You will also have to go into ```worker.py``` and edit the proxy ip used and the username used for Siku.. Be sure to login at least to generate a fingerprint for the scp process.
+You will also have to go into ```worker.py``` and edit the proxy ip used and the username used for Siku.. Be sure to login at least to generate a fingerprint for the scp process.\
+After file the files.txt file with the links to which files you want to download with this instance.\
+Then to run:
+```
+nohup python worker.py &
+```
+
+## Proxy
+The proxy is a flask server that keeps a queue of which files are ready to upload to the server and when the supercomputer can submit the job. To run this server:
+```
+$ sudo apt install python3-venv 
+$ python3 -m venv .venv 
+$ source .venv/bin/activate
+$ pip install flask
+$ git clone https://github.com/Sietseq/Twitter-Internet-Archive-Holidays-Analysis.git
+$ cd Twitter-Internet-Archive-Holidays-Analysis/Proxy
+$ sudo apt install nginx
+$ nano /etc/nginx/sites-enabled
+```
+In this edit file as such:
+```
+server {
+    listen 80;
+    listen [::]:80;
+    server_name <YOUR INSTANCE IP>;
+        
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        include proxy_params;
+    }
+}
+```
+Replacing ```<YOUR INSTANCE IP>``` with the server's public IPv4 address.\
+Then you can run
+```
+nohup python server.py &
+```
