@@ -89,11 +89,8 @@ Other holidays were also included but gave false peaks if the holiday was not in
 <br>
 <br>
 - The graphs for Christmas, New Year, and Halloween are self explanatory but it is worth looking at the rest more in depth.
-<br>
 - The Hanukkah graph fully shows Hanukkah itself but also has three other peaks that could potentially reasons for peaks in words related to Hanukkah.
-<br>
 - The Thanksgiving graph also shows Christmas. This is most likely because the dinner portion of Christmas and Thanksgiving are very similiar.
-<br>
 - The Diwali graph has a small peak for Diwali but a huge peak for New Years. This is most likely because the celebrations are very similiar. 
 <br>
 <br>
