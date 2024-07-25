@@ -69,6 +69,7 @@ $ nohup python job.py &
 ```
 This will make it so that all outputs are sent to the out directory and any finished counts are sent to the counts directory. You will also need to update the ip in ```job.py```. 
 
+## Tools
 ### Combine.py
 Once you have retrieved your counts folder use this script to combine all counts into one count.
 ### Graph.py
