@@ -2,6 +2,7 @@
 This project downloads data from [Internet Archive](https://archive.org/details/twitterstream). Multiple "worker" servers download these files since the Internet Archive sets a low download speed. Then a Proxy server acts like a man in the middle between the Worker servers and the supercomputer Siku. The proxy manages when worker servers should upload their file to the supercomputer and when the supercomputer has finished submitting a job. This project used collections from August 2020 to December 2020 and created a timeline of how often certain holidays were mentioned. \
 ![diagram](diagram.png "Diagram")
 
+# Script Explanations
 ## Worker 
 This portion downloads the files to then be processed by the super computer. This can be ran on multiple cloud instances to get around the download limit imposed by the Internet Archive. To run this:
 ```
@@ -75,4 +76,11 @@ Once you have retrieved your counts folder use this script to combine all counts
 ### Graph.py
 Pass the count from combine.py into this script to generate graphs. 
 
-
+# Results
+After fully downloading and computing all available from August 2020 to December 2020 the following usefull graphs were generated. 
+![christmas](img/christmas.png "christmas")
+![newyear](img/new_year.png "newyear")
+![halloween](img/halloween.png "halloween")
+![hanukkah](img/hanukkah.png "hanukkah")
+![thanksgiving](img/thanksgiving.png "thanksgiving")
+![diwali](img/diwali.png "diwali")
