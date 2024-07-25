@@ -85,10 +85,14 @@ After fully downloading and computing all available from August 2020 to December
 ![thanksgiving](img/thanksgiving.png "thanksgiving")
 ![diwali](img/diwali.png "diwali")
 
-Other holidays were also included but gave false peaks if the holiday was not in the range that was analyzed.\
-The graphs for Christmas, New Year, and Halloween are self explanatory but it is worth looking at the rest more in depth.\
-The Hanukkah graph fully shows Hanukkah itself but also has three other peaks that could potentially reasons for peaks in words related to Hanukkah.\
-The Thanksgiving graph also shows Christmas. This is most likely because the dinner portion of Christmas and Thanksgiving are very similiar.\
-The Diwali graph has a small peak for Diwali but a huge peak for New Years. This is most likely because the celebrations are very similiar. \
+Other holidays were also included but gave false peaks if the holiday was not in the range that was analyzed.
+<br>
+The graphs for Christmas, New Year, and Halloween are self explanatory but it is worth looking at the rest more in depth.
+<br>
+The Hanukkah graph fully shows Hanukkah itself but also has three other peaks that could potentially reasons for peaks in words related to Hanukkah.
+<br>
+The Thanksgiving graph also shows Christmas. This is most likely because the dinner portion of Christmas and Thanksgiving are very similiar.
+<br>
+The Diwali graph has a small peak for Diwali but a huge peak for New Years. This is most likely because the celebrations are very similiar. 
 <br>
 This shows that we should be careful to not be too broad in our keywords that we choose for each category. 
