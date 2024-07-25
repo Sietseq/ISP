@@ -217,7 +217,6 @@ def main():
     # Paralel processing
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for name, dic in zip(file_name_list, executor.map(thread_process, file_name_list)):
-            print(dic)
             for category in dic:
                 dates = list(count[category].keys())
                 for date in dic[category]:
