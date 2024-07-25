@@ -13,6 +13,7 @@ import shutil
 def findWholeWord(w):
     return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
 
+# ALl keys words related to each holiday
 holiday_keywords = {
     "general": {
         "keywords": [
@@ -128,6 +129,7 @@ holiday_keywords = {
 def read_file(f):
     # Open first file
     file = open(f, 'r', encoding="utf8")
+    # Set initial count
     count = {
         "general": {},
         "christmas": {},
@@ -143,20 +145,30 @@ def read_file(f):
         "mother's day": {},
         "father's day": {}
     }
+    
     while True:
         # Read line
         line = file.readline()
         if not line:
             break
 
-        # Convert metadata into list
+        # Convert data into object
         obj = json.loads(line)
+
+        # Get text
         text = obj.get('text')
+
+        # If text is not nothing
         if (text != None):
+            # Process date info
             date = obj.get('created_at')
             date = datetime.strptime(date, "%a %b %d %H:%M:%S %z %Y")
             date = date.strftime("%Y-%m-%d")
+
+            # Make sure the date is not also None
             if (text != None and date != None):
+                # Loop through each category and word in category to see if it is in the tweet.
+                # If so add into the count to the right category and date.
                 for category in holiday_keywords:
                     for word in holiday_keywords[category]["keywords"]:
                         if findWholeWord(word)(text) != None :
@@ -171,19 +183,27 @@ def read_file(f):
 # Prepares everything to be read
 def thread_process(f):
     print(f)
+    # Strip long file name
     name = os.path.splitext(f)[0]
     base_name = os.path.basename(name)
 
     count = {}
+    
+    # If it is just a json file pass it through
     if (os.path.splitext(f)[1] == ".json"):
         base_name = os.path.basename(name)
         count = extract.read_file(f)
     else:
+        # If it is an archive make sure there is no file wit the same name being processed. 
         print(str(sys.argv[1]) + "/current/" + base_name)
         while (os.path.exists((str(sys.argv[1]) + "/current/" + base_name))):
             continue
+
+        # Extract file
         patoolib.extract_archive(f, outdir="./" + str(sys.argv[1]) + "/current", verbosity=-1)
         base_name = os.path.basename(name)
+
+        # Make count
         count = read_file("./" + str(sys.argv[1]) + "/current/" + base_name)
         os.remove("./" + str(sys.argv[1]) + "/current/" + base_name)
 
@@ -219,6 +239,7 @@ def main():
         for name, dic in zip(file_name_list, executor.map(thread_process, file_name_list)):
             for category in dic:
                 dates = list(count[category].keys())
+                # Update count 
                 for date in dic[category]:
                     if date in count[category]:
                         count[category][date] += dic[category][date]
