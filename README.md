@@ -1,10 +1,10 @@
 # Twitter Internet Archive Holidays Analysis
-This project downloads data from [Internet Archive](https://archive.org/details/twitterstream). Multiple "worker" servers download these files since the Internet Archive sets a low download speed. Then a Proxy server acts like a man in the middle between the Worker servers and the supercomputer Siku. The proxy manages when worker servers should upload their file to the supercomputer and when the supercomputer has finished submitting a job. This project used collections from August 2020 to December 2020 and created a timeline of how often certain holidays were mentioned. \
+This project takes tweets from the [Internet Archive](https://archive.org/details/twitterstream) and analyses them through a super computer. Multiple "worker" servers download the files since the Internet Archive sets a low download speed. Then a Proxy server acts like a man in the middle between the worker servers and the supercomputer Siku. The proxy manages when worker servers should upload their file to the supercomputer and when the supercomputer can submit a job. This project used collections from August 2020 to December 2020 and created a timeline of how often certain holidays were mentioned. \
 ![diagram](diagram.png "Diagram")
 
 # Script Explanations
 ## Worker 
-This portion downloads the files to then be processed by the super computer. This can be ran on multiple cloud instances to get around the download limit imposed by the Internet Archive. To run this:
+This portion downloads the files to then be processed by the super computer. This can be ran on multiple cloud instances to get around the download limit imposed by the Internet Archive. The following should be ran on the server:
 ```
 $ sudo apt install python3-venv 
 $ python3 -m venv .venv 
@@ -16,8 +16,8 @@ $ cd Twitter-Internet-Archive-Holidays-Analysis/Worker
 $ mkdir download
 $ touch files.txt  
 ```
-You will also have to go into ```worker.py``` and edit the proxy ip used and the username used for Siku.. Be sure to login at least to generate a fingerprint for the scp process.\
-After file the files.txt file with the links to which files you want to download with this instance.\
+You will also have to go into ```worker.py``` and edit the proxy ip used and the username used for Siku. Be sure to login to Siku on this server to generate a fingerprint for the scp process.\
+After fill files.txt with the links to which files you want to download with this instance.\
 Then to run:
 ```
 nohup python worker.py &
@@ -66,9 +66,11 @@ $ cd Twitter-Internet-Archive-Holidays-Analysis/Siku
 $ mkdir counts
 $ mkdir out
 $ mkdir upload
+```
+This will make it so that all outputs are sent to the out directory and any finished counts are sent to the counts directory. You will also need to update the ip in ```job.py```. Then you can run:
+```
 $ nohup python job.py &
 ```
-This will make it so that all outputs are sent to the out directory and any finished counts are sent to the counts directory. You will also need to update the ip in ```job.py```. 
 
 ## Tools
 ### Combine.py
@@ -87,10 +89,11 @@ After fully downloading and computing all available from August 2020 to December
 
 Other holidays were also included but gave false peaks if the holiday was not in the range that was analyzed.
 <br>
+The graphs for Christmas, New Year, and Halloween are self explanatory but it is worth looking at the rest more in depth.
 <br>
-- The graphs for Christmas, New Year, and Halloween are self explanatory but it is worth looking at the rest more in depth.
-- The Hanukkah graph fully shows Hanukkah itself but also has three other peaks that could potentially reasons for peaks in words related to Hanukkah.
-- The Thanksgiving graph also shows Christmas. This is most likely because the dinner portion of Christmas and Thanksgiving are very similiar.
+<br>
+- The Hanukkah graph fully shows Hanukkah itself but also has 2 other peaks that could potentially have other reasons. 
+- The Thanksgiving graph also shows Christmas. This is most likely because the dinner celebration of Christmas and Thanksgiving are very similiar.
 - The Diwali graph has a small peak for Diwali but a huge peak for New Years. This is most likely because the celebrations are very similiar. 
 <br>
 <br>
